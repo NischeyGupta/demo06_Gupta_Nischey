@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nischey Gupta</title>
+    <meta name="comp1800 template" content="My 1800 App">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Library CSS CDN go here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Boostrap Library JS CDN  go here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Firebase 8 Library related CSS CDN go here -->
+    <!-- Firebase 8 Library related JS CDN go here-->
+
+    <!-- Other libraries go here -->
+    <!-- Google Icons (Material Design)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Link to styles of your own -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <!------------------------------>
+    <!-- Your HTML Layout go here -->
+    <!------------------------------>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid py-3">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo2.jpg" height="30">
+                Nischey's Puzzles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Go to page</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <b>Review of a Puzzle</b>
+    <div class="container">
+        <!-- Content here -->
+        <label> Name of the puzzle: </label>
+        <br>
+        <input id="title" type="text">
+
+        <!-- This is the text area -->
+        <div class="mb-4 mt-2">
+            <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="6" id="comment" name="text"></textarea>
+        </div>
+
+        <!-- This is radio buttons -->
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Understandable</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Yes</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">No</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Not Completely</label>
+        </div>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown py-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Level of the Puzzle
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">Easy</button></li>
+                <li><button class="dropdown-item" type="button">Moderate</button></li>
+                <li><button class="dropdown-item" type="button">Hard</button></li>
+            </ul>
+        </div>
+
+        <!-- Block button -->
+        <div class="d-grid gap-2">
+            <button id="submit" class="btn btn-dark" type="button">Submit</button>
+        </div>
+
+        <!-- Lots of icons in a row -->
+        <p>Rate your overall experience</p>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star_outline</i>
+        <i class="material-icons">star_outline</i>
+
+        <!-- Sticky footer -->
+        <div class="fixed-bottom py-3 bg-info">
+            <div class="container text-center">
+                <i class="material-icons md-48">extension</i>
+                <i class="material-icons md-48">mood</i>
+                <i class="material-icons md-48">favorite</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">&copy;Nischey Gupta Demo 06</p>
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap" />
+            </svg>
+        </a>
+    </footer>
+
+    <!---------------------------------------------->
+    <!-- Your own JavaScript functions go here    -->
+    <!---------------------------------------------->
+    <!-- Link to API keys go here -->
+    <!-- <script src="./scripts/firebaseAPI_TEAM99.js"></script> -->
+
+    <!-- Link to scripts of your own -->
+    <!-- <script src="./scripts/script.js"></script> -->
+
+</body>
+
+</html>
